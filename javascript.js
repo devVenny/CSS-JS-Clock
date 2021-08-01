@@ -11,9 +11,10 @@ function setDate() {
     const minutes = now.getMinutes();
     const seconds = now.getSeconds();
     
-    const hoursDegree =  ( hours / 60 ) * 360 + 90;
-    const minutesDegree = ( minutes / 60 ) * 360 + 90;
-    const secondsDegree = ( seconds / 60 ) * 360 + 90; // 1초가 지날 떄마다 6도씩 rotate
+    
+    const hoursDegree =  ( hours / 60 ) * 360;
+    const minutesDegree = ( minutes / 60 ) * 360;
+    const secondsDegree = ( seconds / 60 ) * 360; // 1초가 지날 떄마다 6도씩 rotate
 
     updateInClock(hoursDegree, minutesDegree, secondsDegree);
 }
